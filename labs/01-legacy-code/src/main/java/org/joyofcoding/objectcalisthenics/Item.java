@@ -1,33 +1,22 @@
 package org.joyofcoding.objectcalisthenics;
 
-public class Item {
-    private String name;
-    private int sellIn;
-    private int quality;
+/**
+ * Created by Daniel on 27-3-2017.
+ */
+public interface Item {
 
-    public Item(String name, int sellIn, int quality) {
-        this.name = name;
-        this.quality = quality;
-        this.sellIn = sellIn;
-    }
 
-    public String getName() {
-        return name;
-    }
+    void increaseSellIn(int value);
 
-    public int getSellIn() {
-        return sellIn;
-    }
+    void decreaseSellin(int value);
 
-    public void setSellIn(int sellIn) {
-        this.sellIn = sellIn;
-    }
+    void increaseQuality(int value);
 
-    public int getQuality() {
-        return quality;
-    }
+    void decreaseQuality(int value);
 
-    public void setQuality(int quality) {
-        this.quality = quality;
-    }
+    void setQualitytoZero();
+
+    void updateQuality();
+
+
 }

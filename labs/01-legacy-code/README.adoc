@@ -56,13 +56,9 @@ First an introduction to our system:
 However, as usual, the original developers have left and there’s no reliable document about the business rules.
 You’ll have to go with the code...
 
-NOTE: Luckily there are basic unit-tests.
+NOTE: Luckily there are basic unit-test.
       The tests make sure the application works as it should,
-      and therefor *should functionally not be changed during refactoring*.
-      Of course, when you rename/move methods,
-      you'll have to update the test code accordingly,
-      but *functionally* it should not change.
-
+      and therefor *should not be touched during the refactoring*.
 
 == Exercise 1: Move code to existing objects
 
@@ -149,8 +145,3 @@ that's the goal of these rules.
 WARNING: Especially rule 7, 8, and 9, are commonly seen as extreme.
          It's good to use them to the letter in learning situations,
          so you experience them to the best.
-
-== Resources
-
-- link:DevelopersAnonymous-ObjectCalisthenics.pdf[9 rules of Object Calisthenics]
-- link:http://williamdurand.fr/2013/06/03/object-calisthenics/
